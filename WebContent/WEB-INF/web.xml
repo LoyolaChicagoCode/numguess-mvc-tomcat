@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+
+<web-app>
+	<servlet>
+		<servlet-name>dispatch</servlet-name>
+		<servlet-class>numguess.DispatchServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>dispatch</servlet-name>
+		<url-pattern>/dispatch</url-pattern>
+	</servlet-mapping>
+	<error-page>
+	  <exception-type>java.lang.NumberFormatException</exception-type>
+	  <location>/error.jsp</location>
+	</error-page>
+</web-app>
